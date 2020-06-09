@@ -1,1 +1,3 @@
-echo -n -e "\033]0;$1\007"
+#!/bin/sh
+title=${1:-$(hostname) $(whoami) $(pwd)}
+echo -n -e "\033]0;$title\007"
